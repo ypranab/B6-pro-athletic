@@ -1,80 +1,44 @@
 [
   {
     "id": "636fb1ac8be42ae5219485330",
-    "isActive": true,
-    "balance": "$3,340.93",
-    "picture": "http://placehold.it/32x32",
-    "age": 24,
-    "eyeColor": "blue",
-    "name": "Garrison Lindsey",
-    "gender": "male",
-    "company": "INSOURCE",
-    "email": "garrisonlindsey@insource.com",
-    "activityTime": 300
+    "picture": "images/ronaldo.jpg",
+    "name": "Running",
+    "age": "5-90",
+    "activityTime": 30
   },
   {
     "id": "636fb1ac8be42ae5219485331",
-    "isActive": true,
-    "balance": "$3,340.93",
-    "picture": "http://placehold.it/32x32",
-    "age": 24,
-    "eyeColor": "blue",
-    "name": "Garrison Lindsey",
-    "gender": "male",
-    "company": "INSOURCE",
-    "email": "garrisonlindsey@insource.com",
-    "activityTime": 303
+    "picture": "images/neymar.jpg",
+    "name": "Cycling",
+    "age": "5-90",
+    "activityTime": 30
   },
   {
     "id": "636fb1ac8be42ae5219485332",
-    "isActive": true,
-    "balance": "$3,340.93",
-    "picture": "http://placehold.it/32x32",
-    "age": 24,
-    "eyeColor": "blue",
-    "name": "Garrison Lindsey",
-    "gender": "male",
-    "company": "INSOURCE",
-    "email": "garrisonlindsey@insource.com",
-    "activityTime": 304
+    "picture": "images/modric.jpg",
+    "name": "Hiking",
+    "age": "24-30",
+    "activityTime": 30
   },
   {
     "id": "636fb1ac8be42ae5219485333",
-    "isActive": true,
-    "balance": "$3,340.93",
-    "picture": "http://placehold.it/32x32",
-    "age": 24,
-    "eyeColor": "blue",
-    "name": "Garrison Lindsey",
-    "gender": "male",
-    "company": "INSOURCE",
-    "email": "garrisonlindsey@insource.com",
-    "activityTime": 305
+    "picture": "images/MESSI.jpg",
+    "name": "Walking",
+    "age": "24-30",
+    "activityTime": 30
   },
   {
     "id": "636fb1ac8be42ae5219485334",
-    "isActive": true,
-    "balance": "$3,340.93",
-    "picture": "http://placehold.it/32x32",
-    "age": 24,
-    "eyeColor": "blue",
-    "name": "Garrison Lindsey",
-    "gender": "male",
-    "company": "INSOURCE",
-    "email": "garrisonlindsey@insource.com",
-    "activityTime": 306
+    "picture": "images/kevin.png",
+    "name": "Sprinting",
+    "age": "24-30",
+    "activityTime": 30
   },
   {
     "id": "636fb1ac8be42ae5219485335",
-    "isActive": true,
-    "balance": "$3,340.93",
-    "picture": "http://placehold.it/32x32",
-    "age": 24,
-    "eyeColor": "blue",
-    "name": "Garrison Lindsey",
-    "gender": "male",
-    "company": "INSOURCE",
-    "email": "garrisonlindsey@insource.com",
-    "activityTime": 307
+    "picture": "images/grizi.jpg",
+    "name": "Jumping",
+    "age": "24-30",
+    "activityTime": 30
   }
 ]

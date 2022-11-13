@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { addToProfile } from '../../utilities/fakeDb';
 import Activities from '../Activities/Activities';
-import Header from '../Header/Header';
 import Profile from '../Profile/Profile';
 import './Athlets.css';
 
@@ -33,7 +32,6 @@ const Athlets = () => {
 
     return (
         <div className='athlets-container'>
-            <Header></Header>
             <div className='activities-container'>
                 {
                     activities.map(activity =>
@@ -44,6 +42,7 @@ const Athlets = () => {
                         </Activities>)
                 }
             </div >
+
             <div className='profile-container'>
                 <Profile activeList={activeList}></Profile>
             </div>

@@ -4,10 +4,8 @@ import './Header.css';
 const Header = () => {
     return (
         <div className="header">
-            <nav>
-                {/* <img src={logo} alt="" /> */}
-                <span>Pro Athletic</span>
-            </nav>
+            {/* <img src={logo} alt="" /> */}
+            <span>Pro Athletic</span>
         </div>
     );
 };

@@ -2,3 +2,19 @@
     position: static;
     top: 0;
 }
+
+.profile-img {
+    width: 25%;
+}
+
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.btn-break {
+    padding: 5px;
+    margin-right: 15px;
+    border-radius: 20px;
+    background-color: aquamarine;
+}
