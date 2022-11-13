@@ -1,8 +1,18 @@
-.activities {
-    border: 2px solid green;
+.activity-container {
+    border-radius: 2%;
+    background-color: azure;
 }
 
 .img-activity {
-    max-width: 100%;
-    height: 100px;
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+
+.btn-list {
+    background-color: blueviolet;
+}
+
+.btn-list:hover {
+    background-color: cornflowerblue;
 }

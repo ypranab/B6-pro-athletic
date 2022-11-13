@@ -1,42 +1,42 @@
 [
   {
     "id": "636fb1ac8be42ae5219485330",
-    "picture": "images/ronaldo.jpg",
+    "picture": "images/hike.png",
     "name": "Running",
     "age": "5-90",
     "activityTime": 30
   },
   {
     "id": "636fb1ac8be42ae5219485331",
-    "picture": "images/neymar.jpg",
+    "picture": "images/hike.png",
     "name": "Cycling",
     "age": "5-90",
     "activityTime": 30
   },
   {
     "id": "636fb1ac8be42ae5219485332",
-    "picture": "images/modric.jpg",
+    "picture": "images/hike.png",
     "name": "Hiking",
     "age": "24-30",
     "activityTime": 30
   },
   {
     "id": "636fb1ac8be42ae5219485333",
-    "picture": "images/MESSI.jpg",
+    "picture": "images/hike.png",
     "name": "Walking",
     "age": "24-30",
     "activityTime": 30
   },
   {
     "id": "636fb1ac8be42ae5219485334",
-    "picture": "images/kevin.png",
+    "picture": "images/hike.png",
     "name": "Sprinting",
     "age": "24-30",
     "activityTime": 30
   },
   {
     "id": "636fb1ac8be42ae5219485335",
-    "picture": "images/grizi.jpg",
+    "picture": "images/hike.png",
     "name": "Jumping",
     "age": "24-30",
     "activityTime": 30
