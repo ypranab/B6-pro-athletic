@@ -1,0 +1,80 @@
+[
+  {
+    "id": "636fb1ac8be42ae5219485330",
+    "isActive": true,
+    "balance": "$3,340.93",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "blue",
+    "name": "Garrison Lindsey",
+    "gender": "male",
+    "company": "INSOURCE",
+    "email": "garrisonlindsey@insource.com",
+    "activityTime": 300
+  },
+  {
+    "id": "636fb1ac8be42ae5219485331",
+    "isActive": true,
+    "balance": "$3,340.93",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "blue",
+    "name": "Garrison Lindsey",
+    "gender": "male",
+    "company": "INSOURCE",
+    "email": "garrisonlindsey@insource.com",
+    "activityTime": 303
+  },
+  {
+    "id": "636fb1ac8be42ae5219485332",
+    "isActive": true,
+    "balance": "$3,340.93",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "blue",
+    "name": "Garrison Lindsey",
+    "gender": "male",
+    "company": "INSOURCE",
+    "email": "garrisonlindsey@insource.com",
+    "activityTime": 304
+  },
+  {
+    "id": "636fb1ac8be42ae5219485333",
+    "isActive": true,
+    "balance": "$3,340.93",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "blue",
+    "name": "Garrison Lindsey",
+    "gender": "male",
+    "company": "INSOURCE",
+    "email": "garrisonlindsey@insource.com",
+    "activityTime": 305
+  },
+  {
+    "id": "636fb1ac8be42ae5219485334",
+    "isActive": true,
+    "balance": "$3,340.93",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "blue",
+    "name": "Garrison Lindsey",
+    "gender": "male",
+    "company": "INSOURCE",
+    "email": "garrisonlindsey@insource.com",
+    "activityTime": 306
+  },
+  {
+    "id": "636fb1ac8be42ae5219485335",
+    "isActive": true,
+    "balance": "$3,340.93",
+    "picture": "http://placehold.it/32x32",
+    "age": 24,
+    "eyeColor": "blue",
+    "name": "Garrison Lindsey",
+    "gender": "male",
+    "company": "INSOURCE",
+    "email": "garrisonlindsey@insource.com",
+    "activityTime": 307
+  }
+]
