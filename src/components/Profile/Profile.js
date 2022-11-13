@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { addBreakTimeToStorage, getBreakTime } from '../../utilities/fakeDb';
 import kevin from './kevin.png';
 import './Profile.css'
 
@@ -10,8 +11,16 @@ const Profile = ({ activeList }) => {
     }
     const [breakTime, setBreakTime] = useState([]);
     const addToBreak = time => {
+        addBreakTimeToStorage(time);
         setBreakTime(time);
     }
+
+    const [breakTimeFromLocal, setBreakTimeFromLocal] = useState([]);
+
+    useEffect(() => {
+        const breakTimeFromLocal = getBreakTime();
+        setBreakTimeFromLocal(breakTimeFromLocal);
+    }, [breakTimeFromLocal])
 
     return (
         <div className='profile-summary'>
@@ -32,14 +41,15 @@ const Profile = ({ activeList }) => {
             </div>
             <h3>Add a Break</h3>
             <div className='btn-div'>
-                <button className='btn-break' onClick={() => addToBreak(20)}>20s</button>
-                <button className='btn-break' onClick={() => addToBreak(30)}>30s</button>
-                <button className='btn-break' onClick={() => addToBreak(40)}>40s</button>
-                <button className='btn-break' onClick={() => addToBreak(50)}>50s</button>
+                <button className='btn-break' onClick={() => addToBreak('20')}>20s</button>
+                <button className='btn-break' onClick={() => addToBreak('30')}>30s</button>
+                <button className='btn-break' onClick={() => addToBreak('40')}>40s</button>
+                <button className='btn-break' onClick={() => addToBreak('50')}>50s</button>
             </div>
             <h2>Exercise Details</h2>
             <p className='details-div'>Exercise Time: {activeTimer} Seconds</p>
-            <p className='details-div'>Break Time: {breakTime} Seconds</p>
+            <p className='details-div'>Break Time: {breakTimeFromLocal['time']} Seconds</p>
+            {/* <p className='details-div'>Break Time: {breakTimeFromLocal} Seconds</p> */}
         </div>
     );
 };

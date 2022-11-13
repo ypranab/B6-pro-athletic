@@ -1,16 +1,32 @@
 import React, { useEffect, useState } from 'react';
-import { addToProfile } from '../../utilities/fakeDb';
+import { addToProfile, getStoredData } from '../../utilities/fakeDb';
 import Activities from '../Activities/Activities';
 import Profile from '../Profile/Profile';
 import './Athlets.css';
 
 const Athlets = () => {
-    const [activities, setactivities] = useState([]);
+    const [activities, setActivities] = useState([]);
     useEffect(() => {
         fetch('activities.json')
             .then(res => res.json())
-            .then(data => setactivities(data));
+            .then(data => setActivities(data));
     }, [])
+
+    useEffect(() => {
+        const storedData = getStoredData();
+        //console.log(storedData);
+        const savedData = [];
+        for (const id in storedData) {
+            const storedActivity = activities.find(active => active.id === id);
+
+            if (storedActivity) {
+                const quantity = storedData[id];
+                storedActivity.quantity = quantity;
+                savedData.push(storedActivity);
+            }
+            setActiveList(savedData);
+        }
+    }, [activities])
 
     const [activeList, setActiveList] = useState([]);
 
