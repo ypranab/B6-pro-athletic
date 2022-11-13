@@ -31,9 +31,9 @@ const Profile = ({ activeList }) => {
             </div>
             <div className='details-div'>
                 <div>
-                    <span className='details'>75kg</span>
-                    <span className='details'>6.5feet</span>
-                    <span className='details'>25years</span>
+                    <span className='details'><strong>75kg</strong></span>
+                    <span className='details'><strong>6.5feet</strong></span>
+                    <span className='details'><strong>25years</strong></span>
                 </div>
                 <span className='details'>Weight</span>
                 <span className='details'>Height</span>
