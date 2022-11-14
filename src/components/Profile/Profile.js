@@ -21,20 +21,20 @@ const Profile = ({ activeList }) => {
     useEffect(() => {
         const breakTimeFromLocal = getBreakTime();
         setBreakTimeFromLocal(breakTimeFromLocal);
-    }, [])
+    }, [breakTime])
 
-    let mystyle = {};
+    // let mystyle = {};
 
-    if (breakTime >= 20) {
-        mystyle = {
-            display: 'none'
-        }
-    }
-    else {
-        mystyle = {
-            display: 'inline-block'
-        }
-    }
+    // if (breakTime >= 20) {
+    //     mystyle = {
+    //         display: 'none'
+    //     }
+    // }
+    // else {
+    //     mystyle = {
+    //         display: 'inline-block'
+    //     }
+    // }
 
     return (
         <div className='profile-summary'>
@@ -62,8 +62,9 @@ const Profile = ({ activeList }) => {
             </div>
             <h2>Exercise Details</h2>
             <p className='details-div'>Exercise Time: {activeTimer} Seconds</p>
-            <p className='details-div'>Break Time: {breakTime}
-                <span style={mystyle}>{breakTimeFromLocal['time']}</span> Seconds</p>
+            {/* <p className='details-div'>Break Time: {breakTime}
+                <span style={mystyle}>{breakTimeFromLocal['time']}</span> Seconds</p> */}
+            <p className='details-div'>Break Time: {breakTimeFromLocal['time']} Seconds</p>
         </div>
     );
 };
