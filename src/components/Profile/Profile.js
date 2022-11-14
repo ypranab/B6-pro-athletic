@@ -10,6 +10,7 @@ const Profile = ({ activeList }) => {
         activeTimer = activeTimer + (activity.activityTime * activity.quantity);
     }
     const [breakTime, setBreakTime] = useState([]);
+
     const addToBreak = time => {
         addBreakTimeToStorage(time);
         setBreakTime(time);
@@ -20,7 +21,20 @@ const Profile = ({ activeList }) => {
     useEffect(() => {
         const breakTimeFromLocal = getBreakTime();
         setBreakTimeFromLocal(breakTimeFromLocal);
-    }, [breakTimeFromLocal])
+    }, [])
+
+    let mystyle = {};
+
+    if (breakTime >= 20) {
+        mystyle = {
+            display: 'none'
+        }
+    }
+    else {
+        mystyle = {
+            display: 'inline-block'
+        }
+    }
 
     return (
         <div className='profile-summary'>
@@ -41,15 +55,15 @@ const Profile = ({ activeList }) => {
             </div>
             <h3>Add a Break</h3>
             <div className='btn-div'>
-                <button className='btn-break' onClick={() => addToBreak('20')}>20s</button>
-                <button className='btn-break' onClick={() => addToBreak('30')}>30s</button>
-                <button className='btn-break' onClick={() => addToBreak('40')}>40s</button>
-                <button className='btn-break' onClick={() => addToBreak('50')}>50s</button>
+                <button className='btn-break' onClick={() => addToBreak(20)}>20s</button>
+                <button className='btn-break' onClick={() => addToBreak(30)}>30s</button>
+                <button className='btn-break' onClick={() => addToBreak(40)}>40s</button>
+                <button className='btn-break' onClick={() => addToBreak(50)}>50s</button>
             </div>
             <h2>Exercise Details</h2>
             <p className='details-div'>Exercise Time: {activeTimer} Seconds</p>
-            <p className='details-div'>Break Time: {breakTimeFromLocal['time']} Seconds</p>
-            {/* <p className='details-div'>Break Time: {breakTimeFromLocal} Seconds</p> */}
+            <p className='details-div'>Break Time: {breakTime}
+                <span style={mystyle}>{breakTimeFromLocal['time']}</span> Seconds</p>
         </div>
     );
 };

@@ -26,7 +26,7 @@ const addBreakTimeToStorage = time => {
     if (storedTime) {
         breakList = JSON.parse(storedTime);
     }
-    breakList[key] = parseInt(time);
+    breakList[key] = time;
     localStorage.setItem('break-time', JSON.stringify(breakList))
 }
 
