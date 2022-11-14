@@ -19,3 +19,15 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width:600px) {
+    .activities-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1100px) {
+    .activities-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
